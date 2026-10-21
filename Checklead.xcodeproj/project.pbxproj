@@ -78,6 +78,7 @@
 		C18FCD045C569585C0434C94 /* HistoryAndGoalsSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82224D46A5DF6A84042A9665 /* HistoryAndGoalsSheets.swift */; };
 		C79010279F22437FB31F7A75 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65A4EC4E23D09BEB793D2F /* DispatchQueue+Alamofire.swift */; };
 		C890AC06C08B0A3A53E4E70E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7C8459966BD9BCBB857E92 /* Assets.xcassets */; };
+		B2C3D4E5F60718293A4B5C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B5C /* Assets.xcassets */; };
 		CBC310BE08E1E92B507588A0 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2633DBFDF0AE2B43497CA740 /* Request.swift */; };
 		CF30BDEE01A2DB1DBA2FD64D /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C65BD2732819FA814D91A /* HTTPHeaders.swift */; };
 		CF78CD004B354F52C5C1AA11 /* SessionVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538FCA6EEE4A0649D8A76A29 /* SessionVault.swift */; };
@@ -186,6 +187,7 @@
 		A1F07E56D2940B7FDA7F2FEE /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
 		AA558266980D459D23335C39 /* TagSheetPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSheetPrinter.swift; sourceTree = "<group>"; };
 		AC7C8459966BD9BCBB857E92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4B5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF8D38CB06BD88AC124E568E /* RequestCompression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCompression.swift; sourceTree = "<group>"; };
 		B4314EE5DE356048FC0F219C /* TodayRailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayRailScreen.swift; sourceTree = "<group>"; };
 		B66A7BDC2CD2A7141454149A /* CheckleadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckleadTests.swift; sourceTree = "<group>"; };
@@ -436,6 +438,7 @@
 		CDBF06BD070066C6F312E43B /* CheckleadWatch */ = {
 			isa = PBXGroup;
 			children = (
+				A1B2C3D4E5F60718293A4B5C /* Assets.xcassets */,
 				2C2B3FFBFACA9BE722E02F05 /* WatchRoot.swift */,
 			);
 			path = CheckleadWatch;
@@ -510,6 +513,7 @@
 			buildConfigurationList = B4AF53C3817863932AE44CCC /* Build configuration list for PBXNativeTarget "CheckleadWatch" */;
 			buildPhases = (
 				9BB59CB49BAE86B37B2F2044 /* Sources */,
+				C3D4E5F60718293A4B5C6D7E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -613,6 +617,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C890AC06C08B0A3A53E4E70E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D4E5F60718293A4B5C6D7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2C3D4E5F60718293A4B5C6D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,6 +816,7 @@
 				SWIFT_STRICT_CONCURRENCY = complete;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+				INFOPLIST_FILE = CheckleadWatch/Info.plist;
 			};
 			name = Debug;
 		};
@@ -1059,6 +1072,7 @@
 				SWIFT_STRICT_CONCURRENCY = complete;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+				INFOPLIST_FILE = CheckleadWatch/Info.plist;
 			};
 			name = Release;
 		};
