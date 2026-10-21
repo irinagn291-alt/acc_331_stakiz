@@ -1,0 +1,13 @@
+Version 1.0 is the first release of Stakiz.
+
+• Introduction pages "Collar chores", "Scan, then snap", and "Clip the day", with "Skip", "Next", and "Continue".
+• A day board of "Today's posts", a tray of chore chips, "Snap", "Collars", "Scan collar", "Undo seat", and "Clipped days".
+• "Pets" with "Pet name", "Add pet", and "Print collar sheet".
+• "Chores" with "Pet", "Chore name", "Time window", "Add chore", and "Active today".
+• "Scan collar" reads a square code. "Known collars" can be tapped with no camera.
+• "Undo seat" lifts the last chore seated today and reopens a clipped day.
+• "Log" for the last seven days, "Misses", and "Export week".
+• "Goals" with "Streak", "Today", and "Yesterday".
+• "Settings" with "Show intro again", "Reset household", "Contact support", and "Open Settings".
+• The household remains on this device. A new calendar day starts a new open day. Yesterday's seats stay in "Log".
+• A Watch app shows "Snap Walk", the figure "1", and "Drag the open chore onto its post." It has no buttons.

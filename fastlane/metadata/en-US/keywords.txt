@@ -1,0 +1,1 @@
+pet,chores,collar,household,streak,scan,log,goals,posts,misses,seats

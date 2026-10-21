@@ -1,0 +1,19 @@
+Stakiz is a household pet-chore board for someone keeping daily care for the animals in one home. Each pet has a collar code and a set of chores for the day. You scan that collar, then seat each open chore on its post. When every active chore is seated, the day clips shut and the streak of clipped days can grow.
+
+• Introduction pages "Collar chores", "Scan, then snap", and "Clip the day", with "Skip", "Next", and "Continue".
+• A day board of "Today's posts" for each active chore, marked "Glowing post", "Open", "Show", or "Seated".
+• A tray of chore chips you drag onto the matching post. A miss springs the chip home.
+• "Snap" plus the chore name, which seats that chore without a drag.
+• Collar codes printed from "Print collar sheet", and "Known collars" you can tap instead of using the camera.
+• "Scan collar" reads a square code on a collar.
+• "Undo seat" lifts the last chore seated today and reopens a clipped day.
+• "Clipped days" counts consecutive days that clipped shut.
+• "Pets" with "Pet name" and "Add pet".
+• "Chores" with "Pet", "Chore name", "Time window", "Add chore", and "Active today".
+• "Log" for the last seven days, "Misses", and "Export week".
+• "Goals" with "Streak", "Today", and "Yesterday".
+• "Settings" with "Show intro again", "Reset household", "Contact support", and "Open Settings".
+• The household remains on this device and is still there the next time the app opens. A new calendar day starts a new open day. Yesterday's seats stay in the log.
+• The Watch app shows a single static page, "Snap Walk", the figure "1", and "Drag the open chore onto its post." It has no buttons.
+
+A new install has no sample pets or chores. Unfinished chores stay on this device until the calendar day changes. "Undo seat" only lifts a seat from today.

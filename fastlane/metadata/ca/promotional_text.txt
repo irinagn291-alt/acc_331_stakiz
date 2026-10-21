@@ -1,0 +1,1 @@
+Escaneja un collar, arrossega cada tasca oberta al seu pal i tanca el dia. Els dies tancats fan créixer la ratxa dels animals d'una sola llar.

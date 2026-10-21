@@ -1,0 +1,13 @@
+La versió 1.0 és el primer llançament de Stakiz.
+
+• Pàgines d'introducció "Tasques del collar", "Escaneja i encaixa" i "Tanca el dia", amb "Omet", "Següent" i "Continua".
+• Un tauler del dia amb "Pals d'avui", una safata de fitxes de tasques, "Encaixa", "Collars", "Escaneja el collar", "Desfés l'encaix" i "Dies tancats".
+• "Mascotes" amb "Nom de la mascota", "Afegeix mascota" i "Imprimeix el full de collars".
+• "Tasques" amb "Mascota", "Nom de la tasca", "Franja horària", "Afegeix tasca" i "Activa avui".
+• "Escaneja el collar" llegeix un codi quadrat. "Collars coneguts" es poden tocar sense càmera.
+• "Desfés l'encaix" aixeca l'última tasca encaixada avui i torna a obrir un dia tancat.
+• "Registre" dels darrers set dies, "Fallades" i "Exporta la setmana".
+• "Objectius" amb "Ratxa", "Avui" i "Ahir".
+• "Configuració" amb "Torna a mostrar la introducció", "Reinicia la llar", "Contacta amb el suport" i "Obre Configuració".
+• La llar es queda en aquest dispositiu. Un nou dia de calendari obre un dia nou. Els encaixos d'ahir es queden al "Registre".
+• Una app de rellotge mostra "Encaixa el passeig", la xifra "1" i "Arrossega la tasca oberta al seu pal". No té botons.
