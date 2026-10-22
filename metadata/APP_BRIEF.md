@@ -1,4 +1,4 @@
-<!-- gf-brief source=21a1a7130ba16a09af859a01762c26b05cb518b9cf43e4a30fc2774c39a2fe78 written=2026-10-22T02:27:08+03:00 -->
+<!-- gf-brief source=615b1fe873254767851122a1c455846a960cc6e96f38dba61ea4d3c822f86981 written=2026-10-22T02:48:53+03:00 -->
 # Stakiz
 ## What it is
 Stakiz is a household pet-chore board. Each pet has a collar code and a set of chores for the day. You scan that collar, then seat each open chore on its post. When every active chore is seated, the day clips shut and the streak of clipped days can grow. It is for someone keeping daily care for the animals in one home.

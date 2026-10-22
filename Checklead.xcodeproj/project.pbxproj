@@ -25,7 +25,6 @@
 		3C0EE8DEE190DF7480FADCA6 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EC63292047C32EB380DAF5 /* ParameterEncoding.swift */; };
 		3D40BA32F25683EF44CF8AE2 /* ReviewLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762C0973293E448C386594BE /* ReviewLaunch.swift */; };
 		3E85BB06792B2BE02D11CEBB /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FD18421291DB3C12574065 /* ResponseSerialization.swift */; };
-		3EF6EC97AA187C0B70C8ED5D /* CheckleadWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5D5D12FAEC2AD8D110E380F2 /* CheckleadWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3F89FC0827C5B3BC824655D8 /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE8DA3BF7EC84DA8304C98 /* WebContentView.swift */; };
 		406EFBBD8E616EF2AE61D1C6 /* RailFold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816931DB76945E9F40E8229D /* RailFold.swift */; };
 		40DA9D5A3A8B6B5FDA4A089F /* RequestCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8D38CB06BD88AC124E568E /* RequestCompression.swift */; };
@@ -44,10 +43,8 @@
 		56215A93DB8249448859E5A7 /* WebSocketRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB87F3CA1C2B91E51784B09 /* WebSocketRequest.swift */; };
 		58CFB7FF671A7B516A019A1E /* OfflineRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149EDEBE967F58FB845A01A2 /* OfflineRetrier.swift */; };
 		5ACB72750ED2DFE4E630B05D /* RoutinesSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16794F42CD0632117F37BA0 /* RoutinesSheet.swift */; };
-		5BB37C30CF10C92FAE3FAB81 /* ReviewLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762C0973293E448C386594BE /* ReviewLaunch.swift */; };
 		5C79C7383B4BFDA0B05E69E5 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABC05927D2542FA8680EC37 /* Result+Alamofire.swift */; };
 		5E990FC06BE614604FF2254F /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258C462157C1AD5398281C58 /* ServerTrustEvaluation.swift */; };
-		64EEA3E86723ABE87EFFEA92 /* WatchRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B3FFBFACA9BE722E02F05 /* WatchRoot.swift */; };
 		65666CD5C49E4A9047D3EF31 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A216E85B9AEBEE906DBFA4 /* APIConfig.swift */; };
 		67E5A4E79303736E9A1AFC7C /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF23905912BB24D3906F37E /* Response.swift */; };
 		6A26062EAED4F4B21D53A07D /* ThemeTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959591E573A0B72CFAEE1E66 /* ThemeTokens.swift */; };
@@ -78,7 +75,6 @@
 		C18FCD045C569585C0434C94 /* HistoryAndGoalsSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82224D46A5DF6A84042A9665 /* HistoryAndGoalsSheets.swift */; };
 		C79010279F22437FB31F7A75 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA65A4EC4E23D09BEB793D2F /* DispatchQueue+Alamofire.swift */; };
 		C890AC06C08B0A3A53E4E70E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7C8459966BD9BCBB857E92 /* Assets.xcassets */; };
-		B2C3D4E5F60718293A4B5C6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60718293A4B5C /* Assets.xcassets */; };
 		CBC310BE08E1E92B507588A0 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2633DBFDF0AE2B43497CA740 /* Request.swift */; };
 		CF30BDEE01A2DB1DBA2FD64D /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C65BD2732819FA814D91A /* HTTPHeaders.swift */; };
 		CF78CD004B354F52C5C1AA11 /* SessionVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538FCA6EEE4A0649D8A76A29 /* SessionVault.swift */; };
@@ -93,13 +89,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C44D044D26088CE8DB1CAF9A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FAA7B461EA57A528661906B8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22C1DB9726C780E84B6E3055;
-			remoteInfo = CheckleadWatch;
-		};
 		DCEF274518FF71314B909CE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FAA7B461EA57A528661906B8 /* Project object */;
@@ -116,20 +105,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		A140BFD94C859BAAB8ADB16C /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				3EF6EC97AA187C0B70C8ED5D /* CheckleadWatch.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		06EC63292047C32EB380DAF5 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		0F9DCE82FC0FF2117856E7B7 /* Concurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concurrency.swift; sourceTree = "<group>"; };
@@ -143,7 +118,6 @@
 		2633DBFDF0AE2B43497CA740 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		27A22D8B31DE24C7E53F5893 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		28AA7F64CD1E1A6CD0CFE39F /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
-		2C2B3FFBFACA9BE722E02F05 /* WatchRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRoot.swift; sourceTree = "<group>"; };
 		2DC3D432894C87C326C6711D /* DataEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEncoding.swift; sourceTree = "<group>"; };
 		2E6CF84ECBA0FD8C9E7EB8EE /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		3AB87F3CA1C2B91E51784B09 /* WebSocketRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketRequest.swift; sourceTree = "<group>"; };
@@ -157,7 +131,6 @@
 		5ABC05927D2542FA8680EC37 /* Result+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Alamofire.swift"; sourceTree = "<group>"; };
 		5BEE5437787B943D7724DF31 /* Checklead.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Checklead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3A865C4364A8CD90284632 /* RetryPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryPolicy.swift; sourceTree = "<group>"; };
-		5D5D12FAEC2AD8D110E380F2 /* CheckleadWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckleadWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF64222D4891DF1E4C41C5B /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		60B1A22D4EAEB85AF1837565 /* RequestTaskMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTaskMap.swift; sourceTree = "<group>"; };
 		69671F2E63A7189B531B3448 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
@@ -187,7 +160,6 @@
 		A1F07E56D2940B7FDA7F2FEE /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
 		AA558266980D459D23335C39 /* TagSheetPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSheetPrinter.swift; sourceTree = "<group>"; };
 		AC7C8459966BD9BCBB857E92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A1B2C3D4E5F60718293A4B5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF8D38CB06BD88AC124E568E /* RequestCompression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCompression.swift; sourceTree = "<group>"; };
 		B4314EE5DE356048FC0F219C /* TodayRailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayRailScreen.swift; sourceTree = "<group>"; };
 		B66A7BDC2CD2A7141454149A /* CheckleadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckleadTests.swift; sourceTree = "<group>"; };
@@ -248,7 +220,6 @@
 				B6C5E6FE64BD7AB364A75246 /* Alamofire.framework */,
 				5BEE5437787B943D7724DF31 /* Checklead.app */,
 				BD66C0DCE86FCF4368DDE7A9 /* CheckleadTests.xctest */,
-				5D5D12FAEC2AD8D110E380F2 /* CheckleadWatch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -429,19 +400,9 @@
 			children = (
 				56D1E331C4A539F338018FD3 /* Checklead */,
 				A0DCBCF0279B4E9D79387732 /* CheckleadTests */,
-				CDBF06BD070066C6F312E43B /* CheckleadWatch */,
 				5F4DD715008E96EA91FC5C00 /* Vendor */,
 				1DFD2290F71BEAACFBE2C0A7 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		CDBF06BD070066C6F312E43B /* CheckleadWatch */ = {
-			isa = PBXGroup;
-			children = (
-				A1B2C3D4E5F60718293A4B5C /* Assets.xcassets */,
-				2C2B3FFBFACA9BE722E02F05 /* WatchRoot.swift */,
-			);
-			path = CheckleadWatch;
 			sourceTree = "<group>";
 		};
 		D08D0D6259B295406C5343F7 /* Core */ = {
@@ -508,24 +469,6 @@
 			productReference = B6C5E6FE64BD7AB364A75246 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		22C1DB9726C780E84B6E3055 /* CheckleadWatch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B4AF53C3817863932AE44CCC /* Build configuration list for PBXNativeTarget "CheckleadWatch" */;
-			buildPhases = (
-				9BB59CB49BAE86B37B2F2044 /* Sources */,
-				C3D4E5F60718293A4B5C6D7E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CheckleadWatch;
-			packageProductDependencies = (
-			);
-			productName = CheckleadWatch;
-			productReference = 5D5D12FAEC2AD8D110E380F2 /* CheckleadWatch.app */;
-			productType = "com.apple.product-type.application";
-		};
 		37EAB14309E4E538B1954B33 /* CheckleadTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEE8D677EBADC20DB7E271C3 /* Build configuration list for PBXNativeTarget "CheckleadTests" */;
@@ -551,12 +494,10 @@
 				CCB6F5C27BF6E8AC3A5A9366 /* Sources */,
 				37C6E4F5CACA43902E6E9F20 /* Resources */,
 				7776E238F7F66E26C71FD735 /* Frameworks */,
-				A140BFD94C859BAAB8ADB16C /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C1FA02B2FA4CB696CE6003AD /* PBXTargetDependency */,
 				EB0DC2AB82990BA3D35E60AC /* PBXTargetDependency */,
 			);
 			name = Checklead;
@@ -576,9 +517,6 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					0A1862C16AD536D923B91CC7 = {
-						ProvisioningStyle = Automatic;
-					};
-					22C1DB9726C780E84B6E3055 = {
 						ProvisioningStyle = Automatic;
 					};
 					37EAB14309E4E538B1954B33 = {
@@ -605,7 +543,6 @@
 			targets = (
 				E094040A43325C839A5F04E3 /* Checklead */,
 				0A1862C16AD536D923B91CC7 /* Alamofire */,
-				22C1DB9726C780E84B6E3055 /* CheckleadWatch */,
 				37EAB14309E4E538B1954B33 /* CheckleadTests */,
 			);
 		};
@@ -620,14 +557,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3D4E5F60718293A4B5C6D7E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B2C3D4E5F60718293A4B5C6D /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FD930355A7DA072B611C7B99 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -639,15 +568,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9BB59CB49BAE86B37B2F2044 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5BB37C30CF10C92FAE3FAB81 /* ReviewLaunch.swift in Sources */,
-				64EEA3E86723ABE87EFFEA92 /* WatchRoot.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BBE2516E10551C446901A89E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -753,11 +673,6 @@
 			target = E094040A43325C839A5F04E3 /* Checklead */;
 			targetProxy = DE8E60F62E0EEA4ECC3FFBCB /* PBXContainerItemProxy */;
 		};
-		C1FA02B2FA4CB696CE6003AD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22C1DB9726C780E84B6E3055 /* CheckleadWatch */;
-			targetProxy = C44D044D26088CE8DB1CAF9A /* PBXContainerItemProxy */;
-		};
 		EB0DC2AB82990BA3D35E60AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0A1862C16AD536D923B91CC7 /* Alamofire */;
@@ -797,28 +712,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
-		};
-		6336D60102F05EF06759EDA1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Stakiz;
-				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.checklead.rail;
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.checklead.rail.watchkitapp;
-				PRODUCT_NAME = CheckleadWatch;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_STRICT_CONCURRENCY = complete;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 26.0;
-				INFOPLIST_FILE = CheckleadWatch/Info.plist;
-			};
-			name = Debug;
 		};
 		66000A532F33D2942AB1CDE7 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -869,11 +762,11 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 6.2;
-				WATCHOS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
 		};
@@ -933,11 +826,11 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 6.2;
-				WATCHOS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
 		};
@@ -1054,28 +947,6 @@
 			};
 			name = Debug;
 		};
-		E67C08B19F4230DC943DC52B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Stakiz;
-				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.checklead.rail;
-				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.checklead.rail.watchkitapp;
-				PRODUCT_NAME = CheckleadWatch;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_STRICT_CONCURRENCY = complete;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 26.0;
-				INFOPLIST_FILE = CheckleadWatch/Info.plist;
-			};
-			name = Release;
-		};
 		FFE59D33375D95157667CBE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1123,15 +994,6 @@
 			buildConfigurations = (
 				844AA4D10639886880547400 /* Debug */,
 				66000A532F33D2942AB1CDE7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		B4AF53C3817863932AE44CCC /* Build configuration list for PBXNativeTarget "CheckleadWatch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6336D60102F05EF06759EDA1 /* Debug */,
-				E67C08B19F4230DC943DC52B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
