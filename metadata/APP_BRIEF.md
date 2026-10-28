@@ -1,131 +1,119 @@
-<!-- gf-brief source=615b1fe873254767851122a1c455846a960cc6e96f38dba61ea4d3c822f86981 written=2026-10-22T02:48:53+03:00 -->
+<!-- gf-brief source=3431f19419196a498d3d81599f425b5282b2c59dbcff067df41e9cd3988098c9 written=2026-10-23T09:06:11+03:00 -->
 # Stakiz
 ## What it is
-Stakiz is a household pet-chore board. Each pet has a collar code and a set of chores for the day. You scan that collar, then seat each open chore on its post. When every active chore is seated, the day clips shut and the streak of clipped days can grow. It is for someone keeping daily care for the animals in one home.
+Stakiz is a household pet-chore board. Each pet has a collar code and a set of chores for the day, shown as posts on one column. You scan a collar, then seat that pet’s open chores until every active chore is seated and the day clips shut. It is for someone keeping daily care for the animals in one home.
+
 ## Launch and onboarding
-A cold launch on a new install opens a three-page introduction before the day board. Page dots show which page you are on.
+A cold launch on a phone or tablet with no saved household opens a full-screen intro before the day board. There is no separate splash copy. The intro has three pages, page dots, "Skip" at the top, and a bottom button.
 
-1. Title "Collar chores". Body "Each pet keeps today's chores on one paper column."
-2. Title "Scan, then snap". Body "Read a collar, then drag the chore onto its post."
-3. Title "Clip the day". Body "When every chore is seated, the day clips shut."
+1. Title "Collar chores". Body "Each pet keeps today's chores on one paper column." Button "Next". "Skip" ends the intro.
+2. Title "Scan, then snap". Body "Read a collar, then drag the chore onto its post." Button "Next". "Skip" ends the intro.
+3. Title "Clip the day". Body "When every chore is seated, the day clips shut." Button "Continue". "Skip" also ends the intro.
 
-"Skip" on every page finishes the introduction and opens the day board. "Next" advances from page 1 to page 2 and from page 2 to page 3. On page 3 the same button reads "Continue" and opens the day board. After that, a later launch opens the day board directly and keeps the household you already entered.
+"Continue" or "Skip" leaves the intro and opens the day board. The intro does not return on later launches unless "Show intro again" is used in Settings.
 
-The day board has no tab bar. A horizontal row of controls sits at the top: "Pets", "Chores", "Log", "Goals", and "Settings". Each opens a full-screen page. "Close" on those pages returns to the day board.
 ## Screens
-### Day board
-There is no navigation title. The large line changes with the day:
+The app has one home board. Other screens open as full-screen covers from that board. There is no tab bar.
 
-- "No chores yet" when there is no pet or no active chore. Under it: "Household empty. Add a pet." The tray caption reads "Add a pet, then a chore."
-- "Scan a collar" when chores exist and no collar has been read today. Under it: "Scan a collar." The tray caption reads "Scan a collar before you drag."
-- "Snap" plus the open chore name after that pet's collar is read. Under it, the chore name plus " is open. Drag it onto the glowing post." The tray caption reads "Drag the open chore onto the glowing post above."
-- "Scan the other collar" when the read pet's chores are seated and another pet still has open chores. Under it: "Scan the other collar to arm its chores."
-- "Day clipped" when every active chore is seated. Under it: "Day clipped." The tray caption reads "Clipped. Undo the last seat to reopen."
+### Today
+The home board has no navigation-bar title. Across the top, five controls open covers: "Pets", "Chores", "Log", "Goals", "Settings".
 
-Other lines that replace that status after an action: "Collar read. Empty posts are armed." "Seated." "Day clipped." "Wrong post. It bounced back." "Scan a collar, then drag the chore." "Missed the post. Try again." "Day clipped. Undo the last seat, then scan." "Day clipped. Undo the last seat, then drag." "That post already holds a chore." "Snap failed. Try again." "Scan failed. Try again." "Add a pet before scanning." "Last seat lifted. Drag is open." "No seat to undo." "Pet added." "Chore added." "Name missing. Type a pet name." "Name missing. Type a chore name." "Pick a pet for this chore." "Household cleared." A chore name plus " is marked on today. Drag it onto its post."
+Under them, a large headline and a status line change with the day:
 
-If the saved household cannot be read, a card shows "Household file was unreadable. Start fresh or retry." or "Last save was repaired from the backup." or "Save failed. Try again." "Retry" tries to load the household again.
+- No pets or no active chores: headline "No chores yet". Status "Household empty. Add a pet."
+- Chores exist and no collar has been read today: headline "Scan a collar". Status "Scan a collar."
+- A collar has been read and a chore is open: headline "Snap " plus that chore’s name. Status is that chore’s name plus " is open. Drag it onto the glowing post." If that pet has nothing left to seat, the status is "Scan the other collar to arm its chores."
+- Every active chore is seated: headline "Day clipped". Status "Day clipped."
 
-Empty board, before any pet and chore: an illustration, "No chores yet.", "Add a pet and a chore.", and "Add a pet", which opens Pets. The tray and collar tools are not on this empty board.
+Other status lines appear after an action: "Collar read. Empty posts are armed.", "Seated.", "Day clipped.", "Wrong post. It bounced back.", "Scan a collar, then drag the chore.", "Missed the post. Try again.", "Day clipped. Undo the last seat, then scan.", "Day clipped. Undo the last seat, then drag.", "That post already holds a chore.", "Snap failed. Try again.", "Scan failed. Try again.", "Add a pet before scanning.", a chore name plus " is marked on today. Drag it onto its post.", "Last seat lifted. Drag is open.", "No seat to undo.", "Pet added.", "Chore added.", "Name missing. Type a pet name.", "Name missing. Type a chore name.", "Pick a pet for this chore.", "Household cleared.", "Demo household restored. Snap the next chore." (simulator only).
 
-Once there is at least one active chore, the board shows "Today's posts", then the tray, then a "Snap" button for the glowing chore, then "Collars", then "Scan collar" and "Undo seat", then "Clipped days".
+If saving fails, a card shows "Save failed. Try again." and "Retry". If a saved household cannot be read, the card shows "Household file was unreadable. Start fresh or retry." and "Retry". If a backup is used, the card shows "Last save was repaired from the backup." and "Retry".
 
-"Today's posts" lists each active chore. A seated chore shows the pet name, the chore name, and "Seated". The glowing open chore shows the pet name, a middle dot, and the time window, then the chore name, then "Glowing post". Tapping it seats that chore. Another open chore for the same collar shows the pet, window, "Snap" plus the chore name, and "Open". Tapping it seats that chore. A chore whose collar has not been read shows the pet, window, the chore name, and "Show". Tapping "Show" marks that chore on today and sets the status to the chore name plus " is marked on today. Drag it onto its post."
+When there are no active chores, the board shows "No chores yet.", "Add a pet and a chore.", and "Add a pet", which opens Pets.
 
-Under the posts, "Snap" plus the glowing chore name seats that chore on its post.
+When chores exist, the board shows "Today's posts". The glowing post shows the pet name, a middle dot, the time window, the chore name, and "Glowing post". Tapping it seats that chore. A seated row shows the pet name, the chore name, and "Seated". An armed open row shows the pet, the window, "Snap " plus the chore name, and "Open"; tapping it seats that chore. A held row shows the pet, the window, the chore name, and "Show"; tapping it marks that chore on today and sets the status to the chore name plus " is marked on today. Drag it onto its post."
 
-The tray is a row of chips, one per active chore that is not yet seated. Each chip is labeled with the chore name. Drag a chip upward onto the matching post. A match seats it. A miss springs it home. Chips do not move when the household is empty or the day is clipped. After one collar is read, only that pet's open chores can be dragged.
+A tray sits under the posts. Its caption is one of: "Add a pet, then a chore.", "Scan a collar before you drag.", "Drag the open chore onto the glowing post above.", or "Clipped. Undo the last seat to reopen." Chore chips in the tray can be dragged onto a matching post. A matching post keeps the chore. A miss springs it back. Dragging before a collar read does not seat the chore. Dragging is ignored once the day is clipped or the board is empty. A large button "Snap " plus the glowing chore’s name also seats that chore.
 
-"Collars" lists a button for each pet that has a collar code. The button title is the pet name. Tapping it counts as reading that collar, with no camera. Before the camera is on, "Continue" is shown with "Reads a collar code on this device." "Continue" asks for the camera and, if allowed, shows the camera in that strip. If the camera is off, the strip says "Camera is off. Open Settings to change it." and "Open Settings" opens the system Settings app.
+"Collars" offers the camera. Before permission, the button is "Continue" and the line is "Reads a collar code on this device." After the camera is allowed, a live view reads a QR code and closes the live view. If the camera is denied, the copy is "Camera is off. Open Settings to change it." and the button is "Open Settings". Known pets appear as buttons labeled with the pet’s name; each one counts as a scan of that pet’s collar code.
 
-"Scan collar" opens the scan page. It is disabled while the day is clipped. It is the filled button while the day is waiting for a collar, and the quieter button after a collar has been read. "Undo seat" lifts the last chore seated today and reopens the day. It is disabled until something is seated. It is the filled button while the day is clipped.
+"Scan collar" opens the scan cover. It is disabled when the day is clipped. "Undo seat" lifts the last seated chore for today and, if the day was clipped, reopens it. It is disabled when nothing is seated today. When the day is clipped, "Undo seat" is the stronger of the two buttons; otherwise "Scan collar" is the stronger one while the day is waiting for a first scan.
 
-"Clipped days" shows the streak as a number, and the date as an eight-digit year, month, and day with no separators.
+"Clipped days" shows the streak count and today’s date number.
 
 ### Pets
-Title "Pets". "Close" returns to the day board. While typing, "Done" dismisses the keyboard.
-
-Empty: an illustration, "No pets yet.", "Add a pet and a chore.", a field labeled "Pet name", and "Add pet". "Add pet" stays disabled until the name has a letter or number in it. Adding a pet clears the field, shows "Pet added.", and gives that pet a collar code built from the name.
-
-With pets, the same name field and "Add pet" sit above the list. Each row shows the pet name, the collar code, and "Print collar sheet". "Print collar sheet" opens a sheet titled in the share preview as "Collar sheet", with "Share collar sheet". The sheet image shows the pet name, a square code, and the same code as text. Sharing uses the system share sheet.
+Title "Pets". "Close" returns to Today. Empty state: "No pets yet." and "Add a pet and a chore." The field placeholder is "Pet name". "Add pet" is disabled until the name has a non-space character. "Done" dismisses the keyboard. Adding a pet also creates a collar code from the name, shown under the pet. "Print collar sheet" opens a share sheet whose control reads "Share collar sheet" and whose preview title is "Collar sheet". The sheet image shows the pet name and the collar code as a QR code.
 
 ### Chores
-Title "Chores". "Close" returns. "Done" dismisses the keyboard.
-
-Empty: an illustration, "No chores yet.", "Add a pet and a chore." If there is no pet, the form says "Add a pet first." and there is no add button. With a pet, the form has a "Pet" picker, a field labeled "Chore name", a field labeled "Time window" that starts as "Morning", and "Add chore". "Add chore" stays disabled until a chore name is typed and a pet is chosen. A blank time window is stored as "Today". Adding shows "Chore added."
-
-Each existing chore shows an editable "Chore name", the pet name, the time window, and "Active today". Turning "Active today" off removes that chore from today's posts and tray. Turning it on puts it back. Clearing the name and leaving it blank does not save the blank name.
+Title "Chores". "Close" returns to Today. Empty state: "No chores yet." and "Add a pet and a chore." If there is no pet, the form says "Add a pet first." and does not offer "Add chore". Otherwise a "Pet" picker lists pet names, a "Chore name" field, and a "Time window" field that starts as "Morning". "Add chore" is disabled until the chore name has a non-space character and a pet is selected. An empty time window is stored as "Today". Each saved chore shows an editable "Chore name", the pet name, the time window, and a switch "Active today". "Done" dismisses the keyboard. Inactive chores leave today’s posts.
 
 ### Log
-Title "Log". "Close" returns. The share icon is labeled "Export week" and opens the system share sheet with the week's seats and misses.
-
-Empty, before any seat or miss is recorded: an illustration, "No seats this week.", "Snap a chore on today.", and "Show today", which returns to the day board.
-
-With history: "Week", then a grid headed "Chore". Seven columns show the day-of-month numbers for the last seven days, ending today. Each active chore is a row. A filled mark means seated that day. An empty circle means open. Under that, "Misses". If there are none: "No wrong posts or early drags." A miss line is the date, then "Wrong post" or "Early drag", then the pet name and the chore name.
+Title "Log". "Close" returns to Today. Empty state: "No seats this week.", "Snap a chore on today.", and "Show today", which closes the log. With history, the page is titled "Week" in the body. A grid header reads "Chore" and seven day-of-month numbers ending today. Each active chore has a row; a filled check means seated that day and an open circle means open. "Misses" lists wrong posts and early drags as a date number, then "Wrong post" or "Early drag", then the pet name and chore name. Collar reads in that list read "Collar", seats read "Seated", and clipped days read "Clipped". If there are no misses, the line is "No wrong posts or early drags." A share control’s spoken label is "Export week". It shares seven days of chores as seated or bare.
 
 ### Goals
-Title "Goals". "Close" returns. "Streak" and the streak number, then "Consecutive clipped days." "Today" shows a count such as "0 of 2 seated" and a bar for how many of today's chores are seated. "Yesterday" shows either "Today is still open. Seat the remaining chores to grow the run." when the streak is zero, or "The run is live. Keep every active chore seated." when the streak is at least one. The bottom button reads "Snap" plus the glowing chore name, or "Show today" when nothing is glowing. Either button returns to the day board.
+Title "Goals". "Close" returns to Today. "Streak" shows the count of consecutive clipped days and the line "Consecutive clipped days." "Today" shows a count " of " another count plus " seated", with a bar. "Yesterday" says either "Today is still open. Seat the remaining chores to grow the run." when the streak is zero, or "The run is live. Keep every active chore seated." The bottom button is "Snap " plus the open chore’s name, or "Show today" when nothing is armed. It closes Goals.
 
 ### Scan collar
-Title "Scan collar". "Close" returns. The large line is "Scan a collar". Under it is the same status line as the day board. "Known collars" lists one button per pet, titled with the pet name and the collar code. Tapping one reads that collar and closes the page.
-
-If the camera is not yet allowed: "Camera waits until you continue." and "Continue". "Continue" asks for the camera. If allowed, the camera fills the plate and reads a square code. A successful read closes the page. If the camera was refused: "Camera is off. Open Settings to change it." and "Open Settings".
+Title "Scan collar". Large heading "Scan a collar", then the same status line as Today. "Close" returns to Today. If the camera is not yet allowed: "Camera waits until you continue." and "Continue", which asks for the camera. If it is allowed, a live view reads one QR code, treats it as a collar code, and closes. If it is off: "Camera is off. Open Settings to change it." and "Open Settings". "Known collars" lists buttons named with the pet name, a space, and the collar code. Tapping one scans that code and closes. A scan is refused while the day is clipped, when there is no pet, or when the code does not match a saved collar.
 
 ### Settings
-Title "Settings". "Close" returns.
+Title "Settings". "Close" returns to Today. "Show intro again" closes Settings and shows the three-page intro. "Reset household" asks "Reset household?" with "Reset all data" and "Cancel". "Reset all data" clears pets, chores, seats, and the streak, and the status becomes "Household cleared." "Contact support" opens the support page. Section "Camera" says "Collar scan uses the camera. If it is off, use Open Settings." and offers "Open Settings". On the simulator only, "Restore demo household" puts the sample household back.
 
-"Show intro again" closes Settings and shows the three introduction pages. Finishing them returns to the day board and does not erase pets or chores.
-
-"Reset household" asks "Reset household?" with "Reset all data" and "Cancel". "Reset all data" clears pets, chores, collars, the log, and the streak, and the status becomes "Household cleared." The day board then shows the empty state. The introduction does not return by itself.
-
-"Contact support" opens the support page.
-
-Section "Camera": "Collar scan uses the camera. If it is off, use Open Settings." and "Open Settings".
 ## Features
-- Introduction pages "Collar chores", "Scan, then snap", and "Clip the day", with "Skip", "Next", and "Continue".
-- A day board of "Today's posts" for each active chore, marked "Glowing post", "Open", "Show", or "Seated".
-- A tray of chore chips you drag onto the matching post. A miss springs the chip home.
-- "Snap" plus the chore name, which seats that chore without a drag.
-- Collar codes printed from "Print collar sheet", and "Known collars" you can tap instead of using the camera.
-- "Scan collar" reads a square code on a collar.
-- "Undo seat" lifts the last chore seated today and reopens a clipped day.
-- "Clipped days" counts consecutive days that clipped shut.
-- "Pets" with "Pet name" and "Add pet".
-- "Chores" with "Pet", "Chore name", "Time window", "Add chore", and "Active today".
-- "Log" for the last seven days, "Misses", and "Export week".
-- "Goals" with "Streak", "Today", and "Yesterday".
-- "Settings" with "Show intro again", "Reset household", "Contact support", and "Open Settings".
-- The household remains on this device and is still there the next time the app opens. A new calendar day starts a new open day. Yesterday's seats stay in the log.
+- Intro pages "Collar chores", "Scan, then snap", and "Clip the day".
+- A day column of posts for each active chore, with "Glowing post", "Open", "Show", and "Seated".
+- Collar scan from a QR code, or a tap on a known pet, which arms that pet’s empty posts.
+- Drag a chore from the tray onto its post, or tap "Snap " plus the chore name, to seat it.
+- A wrong post bounces the chore back. A drag before any collar read is kept as an early drag. A miss does not seat the chore.
+- When every active chore is seated, the day clips and the streak of "Clipped days" can grow.
+- "Undo seat" lifts the last seat for today and reopens a clipped day.
+- Pets, collar codes, and a printable "Collar sheet".
+- Chores with a pet, a name, a time window, and "Active today".
+- A seven-day "Log" with "Misses" and "Export week".
+- "Goals" with today’s seated count and the streak.
+- "Show intro again", "Reset household", "Contact support", and camera "Open Settings".
+
 ## Behaviours that can look like bugs
-- "Add pet" does nothing until "Pet name" is filled in. Type a name, then tap "Add pet".
-- "Add chore" does nothing until "Chore name" is filled in and a pet is chosen. With no pets, the form only says "Add a pet first." Add a pet, then return to Chores.
-- The day board stays on "No chores yet." and "Add a pet and a chore." until there is a pet and at least one active chore. "Add a pet" opens Pets. Then add a chore under "Chores".
-- Chips sit still and the caption says "Scan a collar before you drag." until a collar is read. Tap the pet under "Collars", or "Scan collar", then drag.
-- Dragging before any collar read does not seat the chore. The status becomes "Scan a collar, then drag the chore." That drag is kept as an "Early drag" under "Misses".
-- Dropping a chore on the wrong post does not seat it. The chip springs home and the status becomes "Wrong post. It bounced back." That miss is listed under "Misses" as "Wrong post".
-- A drop that misses the post says "Missed the post. Try again." and the chip returns.
-- After one pet's collar is read, the other pet's chips do not drag. The headline becomes "Scan the other collar". Scan or tap that pet's collar.
-- When every active chore is seated, the headline is "Day clipped", "Scan collar" is disabled, and chips do not drag. The status may say "Day clipped. Undo the last seat, then scan." or "Day clipped. Undo the last seat, then drag." Tap "Undo seat" to lift the last seat. "Undo seat" itself is disabled while nothing is seated. Tapping it with nothing to lift says "No seat to undo."
-- "Show" on a chore whose collar is unread does not seat it. It only marks it. Scan that collar, then snap or drag.
-- Turning "Active today" off makes that chore vanish from today's posts and from the tray. Turn "Active today" back on to restore it.
-- An unknown square code does not add a pet. The status becomes "Scan failed. Try again." Use the code printed for a pet you already added, or tap that pet under "Known collars".
-- Scanning with no pet says "Add a pet before scanning."
-- "Reset all data" looks like the app forgot the household. It is the confirm on "Reset household". Add pets and chores again.
-- If saving fails, "Save failed. Try again." stays on screen with "Retry". If a damaged save was repaired, the card says "Last save was repaired from the backup." If it cannot be read, it says "Household file was unreadable. Start fresh or retry."
-- The log stays on "No seats this week." until a chore is seated or a miss is recorded. "Show today" returns to the board. Seat a chore, then open "Log" again.
-- Goals can say "0 of 0 seated" while the board is empty. Add a pet and a chore first.
-- "Show intro again" plays the three pages again and then returns. It does not clear the household.
+- "Add pet" stays disabled until "Pet name" contains something other than spaces. Type a name.
+- "Add chore" stays disabled until "Chore name" contains something other than spaces and a pet is selected. If the line "Add a pet first." is showing, add a pet on Pets, then return.
+- With no active chores, Today shows "No chores yet." and "Add a pet and a chore." Use "Add a pet".
+- "Scan collar" is disabled and the tray says "Clipped. Undo the last seat to reopen." after the day clips. Tap "Undo seat", then scan. Status if you still try: "Day clipped. Undo the last seat, then scan." or "Day clipped. Undo the last seat, then drag."
+- "Undo seat" is disabled when nothing is seated today. Seat a chore first. If it is tapped with nothing to lift, the status is "No seat to undo."
+- Dragging before a collar read does not seat the chore. Status: "Scan a collar, then drag the chore." Scan, then drag.
+- A chore dropped on another chore’s post bounces back. Status: "Wrong post. It bounced back." Drop it on its own glowing post.
+- A drop that misses the post does not seat it. Status: "Missed the post. Try again."
+- A post that already holds a chore refuses another. Status: "That post already holds a chore."
+- An unknown QR code does not arm a pet. Status: "Scan failed. Try again." Use a code shown under that pet, or the pet’s button under "Known collars".
+- Scanning with no pets shows "Add a pet before scanning."
+- Turning "Active today" off removes that chore from today’s posts. The day can clip from the chores that remain. Turn it back on to include it again.
+- At the next calendar day the posts are open again. Yesterday’s seats stay in "Log". The streak counts only consecutive clipped days and stops at the first day that is not fully seated.
+- "Show" on a held post only marks it. It does not seat it. The status says the chore " is marked on today. Drag it onto its post."
+- After one pet’s chores are seated, the headline becomes "Scan the other collar" until the next collar is read.
+- "Retry" reloads after "Save failed. Try again." or "Household file was unreadable. Start fresh or retry."
+
 ## Starter content and resume
-None. A new install has no sample pets or chores. Unfinished chores stay on this device and are still open the next time the app is opened, until the calendar day changes. A new day starts open again. Seats from earlier days remain in "Log". "Undo seat" only lifts a seat from today.
+On a device, none. The first launch is the intro, then an empty board.
+
+On the simulator, a sample household is already filled after the intro is skipped by that sample: pets "Mira" and "Pip", collar codes "CHL-MIRA" and "CHL-PIP", chores "Feed" (Morning), "Walk" (Afternoon), and "Brush" (Evening) for Mira, and "Water" (Night) for Pip. Yesterday is fully seated and clipped. Today, Mira’s collar is already read and "Feed" is seated, so the board is waiting to snap "Walk". The log also has an early drag on "Walk" from two days ago and a wrong post on "Walk" today. "Restore demo household" in Settings puts that sample back. It is not on a device.
+
+Unfinished work resumes. Pets, chores, today’s seats, and the streak stay on the device and return on the next launch. "Undo seat" can reopen today. A new calendar day starts a fresh open column.
+
 ## Permissions
-Camera. It is asked only after you tap "Continue" on the day board under "Collars", or "Continue" on "Scan collar". The usage description is "Stakiz reads the code on a pet collar tag so today's chores lock onto that animal." If you refuse, the app shows "Camera is off. Open Settings to change it." and "Open Settings". You can still tap a known collar with no camera.
+Camera, for reading a collar QR code. It is asked only after "Continue" on Today under "Collars", or "Continue" on "Scan collar". The usage description is "Checklead reads the code on a pet collar tag so today's chores lock onto that animal." If the person says no, the app shows "Camera is off. Open Settings to change it." and "Open Settings". It does not ask again in the app.
+
 ## Absent
-Login or accounts, in-app purchase, ads, analytics, user-generated content shared with other people, an account deletion flow, and an App Tracking Transparency prompt. "Reset household" only clears the household on this device. "Export week" and "Share collar sheet" use the system share sheet.
+Login or accounts, in-app purchase, ads, analytics, a public user-generated content feed, an account-deletion flow, and an App Tracking Transparency prompt. Names typed for pets and chores stay in the household on this device. "Reset all data" clears that household. It is not an account deletion.
+
 ## Data and support
-Pets, chores, collar codes, seats, misses, and the streak stay on this device. Collar reading happens on this device. "Contact support" is in Settings and opens the support page.
+The household stays on this device. "Contact support" in Settings opens the support page.
+
 ## Scanning and health
-The camera reads a square code on a pet collar. It expects the code printed for a pet already in "Pets". That code is shown under the pet name and on the collar sheet. A matching code arms that pet's open chores. Any other code shows "Scan failed. Try again." Known collars can be chosen by tapping the pet name, with no camera. Health, medical, and product-health information: none.
+The app scans QR codes. It expects a collar code that matches a pet already in the household, including codes printed on "Collar sheet" and the buttons under "Known collars". A code that does not match shows "Scan failed. Try again."
+
+None for health, medical, or product-health information.
+
 ## Platform
-The app follows the device calendar and the device's number formatting for the streak and for day numbers in the log. Dates on the board are an eight-digit year, month, and day. The appearance is light. It runs on iPhone and iPad. iPhone can be portrait or either landscape. iPad is portrait. It fills the screen. The minimum iPhone and iPad system is iOS 17.0. A Watch app is included and shows a single static page, "Snap Walk", the figure "1", and "Drag the open chore onto its post." It has no buttons. Its minimum system is watchOS 26.0.
+The on-screen language is English. Counts and the date number follow the device’s number format. There is no region lock. The interface is light. iPhone uses portrait and both landscapes. iPad uses portrait, upside-down portrait, and both landscapes, full screen. iPhone and iPad. Minimum iOS 17.0. The name under the icon is "Stakiz".
+
 ## Category
 Lifestyle
