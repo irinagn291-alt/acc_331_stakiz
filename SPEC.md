@@ -896,10 +896,10 @@ Write `README.md` at the app folder root covering:
 ```bash
 cd Checklead
 xcodegen generate
-xcodebuild build-for-testing -scheme Checklead -destination 'generic/platform=iOS Simulator' -jobs 4 CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO -derivedDataPath '/Users/belzephyrus/Documents/gambling-factory/.artifacts/genesis/com.checklead.rail/DerivedData' SWIFT_TREAT_WARNINGS_AS_ERRORS=YES
-xcodebuild -scheme Checklead -destination 'generic/platform=iOS' -jobs 4 CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO -derivedDataPath '/Users/belzephyrus/Documents/gambling-factory/.artifacts/genesis/com.checklead.rail/DerivedData' SWIFT_TREAT_WARNINGS_AS_ERRORS=YES build
+xcodebuild build-for-testing -scheme Checklead -destination 'generic/platform=iOS Simulator' -jobs 4 CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO -derivedDataPath '/Users/belzephyrus/Documents/gambling_factory/.artifacts/genesis/com.checklead.rail/DerivedData' SWIFT_TREAT_WARNINGS_AS_ERRORS=YES
+xcodebuild -scheme Checklead -destination 'generic/platform=iOS' -jobs 4 CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO -derivedDataPath '/Users/belzephyrus/Documents/gambling_factory/.artifacts/genesis/com.checklead.rail/DerivedData' SWIFT_TREAT_WARNINGS_AS_ERRORS=YES build
 xcrun simctl list devices available
-xcodebuild test-without-building -scheme Checklead -destination 'platform=iOS Simulator,id=<UDID>' -jobs 4 -derivedDataPath '/Users/belzephyrus/Documents/gambling-factory/.artifacts/genesis/com.checklead.rail/DerivedData'
+xcodebuild test-without-building -scheme Checklead -destination 'platform=iOS Simulator,id=<UDID>' -jobs 4 -derivedDataPath '/Users/belzephyrus/Documents/gambling_factory/.artifacts/genesis/com.checklead.rail/DerivedData'
 ```
 
 Signing is off only on that command line. Do not put CODE_SIGNING_ALLOWED, CODE_SIGNING_REQUIRED, CODE_SIGN_IDENTITY, DEVELOPMENT_TEAM, SWIFT_TREAT_WARNINGS_AS_ERRORS or -derivedDataPath in project.yml — they are command-line only. CI signs the archive. Leave CODE_SIGN_STYLE: Automatic as the scaffold set it. The exact simulator does not matter — use any available UDID from the list.

@@ -33,7 +33,7 @@ ignore_language_directory_validation true
 overwrite_screenshots true
 screenshot_processing_timeout 600
 skip_app_version_update false
-app_version "1.1"
+app_version "1.2"
 
 submit_for_review false
 automatic_release false
@@ -50,6 +50,12 @@ _here = if respond_to?(:configfile_path) && configfile_path
 else
   File.expand_path("fastlane")
 end
+
+# Task locales are an allowlist. Fastlane's languages option alone also loads
+# every metadata directory, so filter its loader before it reads any files.
+require File.expand_path("patch_deliver_locales.rb", _here)
+GFDeliverLocales.load(File.join(_here, "listing-locales.json"))
+languages(GFDeliverLocales.locales)
 
 # fastlane 2.232's list stops before sl-SI. This eval runs after Deliver is
 # loaded and before metadata and screenshots are collected. The ignore flag
