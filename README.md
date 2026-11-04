@@ -36,4 +36,8 @@ xcodegen generate
 xcodebuild -scheme Checklead -destination 'generic/platform=iOS' build
 ```
 
-Deployment target iOS 17. No third-party packages.
+Deployment target iOS 17. Alamofire is compiled from vendored sources in `Vendor/Alamofire/Source`.
+
+Source: https://github.com/petarlovrojukic-a11y/Alamofire
+
+Pinned commit: `9799237b84cbd97f80a3ac9b69b30ba65139f752`. The vendored Source directory is an exact copy of that commit; `Source/Info.plist` is excluded from compilation because the framework uses a generated Info.plist.

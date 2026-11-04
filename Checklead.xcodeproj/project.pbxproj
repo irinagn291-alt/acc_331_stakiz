@@ -56,7 +56,6 @@
 		799AF15C7BD6B4B14E39F764 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94E56B8AC3BE3D51D40296F /* AuthenticationInterceptor.swift */; };
 		7BF0C9FA052E843B5C2C7F71 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBDD482195A0558CC3485D8 /* Combine.swift */; };
 		831F6A41B2B45FAD24ABF1FB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = F83BE19C6BC0367968E5F734 /* PrivacyInfo.xcprivacy */; };
-		83AA8881DF039B49ED28850B /* DataEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC3D432894C87C326C6711D /* DataEncoding.swift */; };
 		8B1CF9F8E2F73715FCD9E9B4 /* JauntVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CA279B2F580D5349AE4BD /* JauntVault.swift */; };
 		8F18434551560D56F68A99E7 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3204717F31B333CC10B6448 /* Protected.swift */; };
 		94BE29026BBA868D4A1F800F /* TagScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976FC826DA90A02E1B768B7B /* TagScannerView.swift */; };
@@ -118,7 +117,6 @@
 		2633DBFDF0AE2B43497CA740 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		27A22D8B31DE24C7E53F5893 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		28AA7F64CD1E1A6CD0CFE39F /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
-		2DC3D432894C87C326C6711D /* DataEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEncoding.swift; sourceTree = "<group>"; };
 		2E6CF84ECBA0FD8C9E7EB8EE /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		3AB87F3CA1C2B91E51784B09 /* WebSocketRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketRequest.swift; sourceTree = "<group>"; };
 		3E098A5F4FD8E2A9A9C2EEF8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -129,7 +127,7 @@
 		538FCA6EEE4A0649D8A76A29 /* SessionVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionVault.swift; sourceTree = "<group>"; };
 		586490DBC1CF174276350CD6 /* AlamofireExtended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExtended.swift; sourceTree = "<group>"; };
 		5ABC05927D2542FA8680EC37 /* Result+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Alamofire.swift"; sourceTree = "<group>"; };
-		5BEE5437787B943D7724DF31 /* Checklead.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Checklead.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BEE5437787B943D7724DF31 /* Checklead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3A865C4364A8CD90284632 /* RetryPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryPolicy.swift; sourceTree = "<group>"; };
 		5EF64222D4891DF1E4C41C5B /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		60B1A22D4EAEB85AF1837565 /* RequestTaskMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTaskMap.swift; sourceTree = "<group>"; };
@@ -186,7 +184,7 @@
 		EAB2BD673F0A547719173431 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedResponseHandler.swift; sourceTree = "<group>"; };
 		ECC88FAD30277B9223A91EF4 /* MarkBoards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkBoards.swift; sourceTree = "<group>"; };
 		F2EE9BB4DFB6DA12260CF92A /* DataStreamRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStreamRequest.swift; sourceTree = "<group>"; };
-		F83BE19C6BC0367968E5F734 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		F83BE19C6BC0367968E5F734 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -409,7 +407,6 @@
 			isa = PBXGroup;
 			children = (
 				71BE2F577A00079D6842EE53 /* AFError.swift */,
-				2DC3D432894C87C326C6711D /* DataEncoding.swift */,
 				5EF64222D4891DF1E4C41C5B /* DataRequest.swift */,
 				F2EE9BB4DFB6DA12260CF92A /* DataStreamRequest.swift */,
 				6BAA298A6C7254DB1576FBA9 /* DownloadRequest.swift */,
@@ -621,7 +618,6 @@
 				7BF0C9FA052E843B5C2C7F71 /* Combine.swift in Sources */,
 				48B4813859C8FA72C2CE2E53 /* Concurrency.swift in Sources */,
 				AC0C27EDD2796936D7EDDA79 /* DataCache.swift in Sources */,
-				83AA8881DF039B49ED28850B /* DataEncoding.swift in Sources */,
 				9874F3A83B24699DAFB226ED /* DataRequest.swift in Sources */,
 				6C10556A05155BB3A8A3F81E /* DataStreamRequest.swift in Sources */,
 				C79010279F22437FB31F7A75 /* DispatchQueue+Alamofire.swift in Sources */,
@@ -687,7 +683,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Stakiz;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
@@ -860,7 +856,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -890,7 +886,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -921,7 +917,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Stakiz;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;

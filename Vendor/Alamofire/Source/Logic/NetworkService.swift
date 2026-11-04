@@ -1,4 +1,5 @@
 import Foundation
+import Alamofire
 #if canImport(UIKit)
 import UIKit
 #endif
@@ -39,6 +40,10 @@ public final class NetworkService {
         self.session = Session(configuration: configuration)
     }
 
+    init(session: Session) {
+        self.session = session
+    }
+
     private func getBundleIdentifier() -> String {
         Bundle.main.bundleIdentifier ?? ""
     }
@@ -54,6 +59,10 @@ public final class NetworkService {
         SessionVault.restore()
         if let cached = DataCache.shared.contentURL, !cached.isEmpty {
             gate.finish(.webContent, cached)
+            return
+        }
+        if DataCache.shared.wasRegistrationAttempted {
+            gate.finish(.nativeInterface, nil)
             return
         }
 
@@ -76,7 +85,7 @@ public final class NetworkService {
         request.setValue("application/json", forHTTPHeaderField: "Accept")
 
         #if canImport(UIKit)
-        request.setValue(_BufferCodec.deviceSafari, forHTTPHeaderField: "User-Agent")
+        request.setValue(AppConfiguration.defaultUserAgent, forHTTPHeaderField: "User-Agent")
         #endif
 
         do {

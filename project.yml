@@ -47,6 +47,8 @@ targets:
     platform: iOS
     sources:
       - path: Vendor/Alamofire/Source
+        excludes:
+          - Info.plist
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.checklead.rail.alamofire
@@ -87,3 +89,7 @@ schemes:
     test:
       targets:
         - CheckleadTests
+    run:
+      executable: Checklead
+    profile:
+      executable: Checklead
